@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
-import UserPage from "./pages/UserPage"; // UserPage'i import ettik
+import DashboardPage from "./pages/DashboardPage";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<LoginPage />} />
-        <Route path="/user" element={<UserPage />} />
+        <Route path="/dashboard1" element={<DashboardPage />} />
       </Routes>
     </Router>
   );
