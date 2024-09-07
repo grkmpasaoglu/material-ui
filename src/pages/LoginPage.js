@@ -69,7 +69,7 @@ const LoginPage = () => {
 
       localStorage.setItem("token", token);
 
-      navigate("/user");
+      navigate("/dashboardpage");
     } catch (error) {
       setError("Invalid password.");
     }

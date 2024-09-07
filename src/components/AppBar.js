@@ -7,6 +7,7 @@ import {
   FormControl,
   Input,
   InputAdornment,
+  Typography,
 } from "@mui/material";
 import {
   Menu as MenuIcon,
@@ -19,25 +20,7 @@ import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
 
-const AppBarComponent = () => {
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-  const [isClosing, setIsClosing] = React.useState(false);
-
-  const handleDrawerClose = () => {
-    setIsClosing(true);
-    setMobileOpen(false);
-  };
-
-  const handleDrawerTransitionEnd = () => {
-    setIsClosing(false);
-  };
-
-  const handleDrawerToggle = () => {
-    if (!isClosing) {
-      setMobileOpen(!mobileOpen);
-    }
-  };
-
+const AppBarComponent = ({ onMenuClick }) => {
   return (
     <AppBar
       position="fixed"
@@ -61,7 +44,7 @@ const AppBarComponent = () => {
           color="inherit"
           aria-label="open drawer"
           edge="start"
-          onClick={handleDrawerToggle}
+          onClick={onMenuClick} // Use the prop for toggling the drawer
           sx={{ mr: 2, display: { sm: "none" } }}
         >
           <MenuIcon />

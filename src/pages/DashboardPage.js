@@ -10,6 +10,7 @@ import {
   ListItemText,
   Toolbar,
   Container,
+  Typography,
 } from "@mui/material";
 import {
   HomeOutlined as HomeOutlinedIcon,
@@ -26,20 +27,21 @@ import {
 import EnhancedTable from "../components/EnhancedTable";
 import Register from "../components/Register";
 import AppBarComponent from "../components/AppBar";
+import SettingsIcon from '@mui/icons-material/Settings';
 
 const drawerWidth = 240;
 
 const menuItems = [
-  { text: "Dashboard", icon: <HomeOutlinedIcon /> },
-  { text: "UI Elements", icon: <GpsFixedIcon /> },
-  { text: "Form Elements", icon: <FormatListBulletedIcon /> },
-  { text: "Tables", icon: <TableRowsOutlinedIcon /> },
-  { text: "Icons", icon: <AccountBoxIcon /> },
-  { text: "Charts", icon: <BarChartOutlinedIcon /> },
-  { text: "User Pages", icon: <PersonIcon /> },
-  { text: "Error Pages", icon: <ErrorIcon /> },
-  { text: "General Pages", icon: <ContactPageIcon /> },
-  { text: "Documentation", icon: <ArticleIcon /> },
+  { text: "Ana Sayfa", icon: <HomeOutlinedIcon /> },
+  { text: "Parça takip", icon: <GpsFixedIcon /> },
+  { text: "Stok Takip", icon: <FormatListBulletedIcon /> },
+  { text: "Kargo", icon: <TableRowsOutlinedIcon /> },
+  { text: "Kayıtlar", icon: <AccountBoxIcon /> },
+  { text: "Raporlar", icon: <BarChartOutlinedIcon /> },
+  { text: "Kullanıcılar", icon: <PersonIcon /> },
+  { text: "Arızalı Parçalar", icon: <ErrorIcon /> },
+  { text: "Genel Parçalar", icon: <ContactPageIcon /> },
+  { text: "Kılavuz", icon: <ArticleIcon /> },
 ];
 
 function ResponsiveDrawer(props) {
@@ -48,7 +50,7 @@ function ResponsiveDrawer(props) {
   const handleDrawerClose = () => setMobileOpen(false);
 
   const drawer = (
-    <Box sx={{ bgcolor: "#131621", height: "100vh" }}>
+    <Box sx={{ bgcolor: "#131621", height: "100vh", display: 'flex', flexDirection: 'column' }}>
       <Toolbar sx={{ fontSize: "30px", color: "#A059FF", mb: "22px" }}>
         LOGO
       </Toolbar>
@@ -81,13 +83,39 @@ function ResponsiveDrawer(props) {
           </ListItem>
         ))}
       </List>
+      <Box sx={{ marginTop: 'auto' }}>
+        <ListItem disablePadding>
+          <ListItemButton
+            sx={{
+              "&:hover": {
+                transform: "translateY(-4px)",
+                transition: "transform 0.3s ease",
+              },
+              transition: "transform 0.3s ease",
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                width: "100%",
+              }}
+            >
+              <ListItemText primary="Ayarlar" sx={{ color: "white" }} />
+              <ListItemIcon sx={{ color: "#A059FF" }}>
+                <SettingsIcon />
+              </ListItemIcon>
+            </Box>
+          </ListItemButton>
+        </ListItem>
+      </Box>
     </Box>
   );
 
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBarComponent /> {/* APP BAR */}
+      <AppBarComponent onMenuClick={() => setMobileOpen(!mobileOpen)} />
       <Box
         component="nav"
         sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
@@ -104,6 +132,15 @@ function ResponsiveDrawer(props) {
               width: drawerWidth,
               border: "none",
               height: "100vh",
+              bgcolor: "#131621", // Set the background color
+              overflowY: "auto", // Allow vertical scrolling
+              "&::-webkit-scrollbar": {
+                width: "8px",
+              },
+              "&::-webkit-scrollbar-thumb": {
+                backgroundColor: "#A059FF",
+                borderRadius: "4px",
+              },
             },
           }}
         >
@@ -117,6 +154,15 @@ function ResponsiveDrawer(props) {
               width: drawerWidth,
               border: "none",
               height: "100vh",
+              bgcolor: "#131621", // Set the background color
+              overflowY: "auto", // Allow vertical scrolling
+              "&::-webkit-scrollbar": {
+                width: "8px",
+              },
+              "&::-webkit-scrollbar-thumb": {
+                backgroundColor: "#A059FF",
+                borderRadius: "4px",
+              },
             },
           }}
           open
@@ -162,6 +208,7 @@ function ResponsiveDrawer(props) {
             overflowX: "auto",
           }}
         >
+          <Typography sx={{ fontWeight: "bold", mb: "10px" }}>Stok Takip</Typography>
           <EnhancedTable /> {/* ENHANCED TABLE */}
         </Container>
       </Box>
