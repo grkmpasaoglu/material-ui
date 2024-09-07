@@ -7,7 +7,6 @@ import {
   FormControl,
   Input,
   InputAdornment,
-  Typography,
 } from "@mui/material";
 import {
   Menu as MenuIcon,
