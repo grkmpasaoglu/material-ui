@@ -7,9 +7,6 @@ const theme1 = createTheme({
     primary: {
       main: colors.blue[600],
     },
-    secondary: {
-      main: colors.red[500],
-    },
   },
   components: {
     MuiButton: {
@@ -48,9 +45,6 @@ const theme2 = createTheme({
   palette: {
     primary: {
       main: colors.blueGrey[700],
-    },
-    secondary: {
-      main: colors.orange[500],
     },
   },
   components: {

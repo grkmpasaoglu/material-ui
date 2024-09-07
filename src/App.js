@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LoginPage from "./components/LoginPage";
-import UserPage from "./components/UserPage"; // UserPage'i import ettik
+import LoginPage from "./pages/LoginPage";
+import UserPage from "./pages/UserPage"; // UserPage'i import ettik
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<LoginPage />} />
-        <Route path="/user" element={<UserPage />} /> {/* UserPage rotası */}
+        <Route path="/user" element={<UserPage />} />
       </Routes>
     </Router>
   );

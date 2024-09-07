@@ -1,9 +1,10 @@
 import React from "react";
+import ResponsiveDrawer from "../components/Drawer";
 
 const UserPage = () => {
   return (
     <div>
-      <h1>Welcome to User Page!</h1>
+      <ResponsiveDrawer />
     </div>
   );
 };
