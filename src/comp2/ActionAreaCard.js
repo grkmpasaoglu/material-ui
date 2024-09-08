@@ -13,7 +13,12 @@ export default function FoodCards() {
       <Grid container spacing={3}>
         {/* First Food Card */}
         <Grid item xs={12} md={4}>
-          <Card>
+          <Card sx={{
+            transition: "transform 0.3s ease", // Animasyonun yumuşak olması için geçiş süresi
+            "&:hover": {
+              transform: "translateY(-10px)", // Hover sırasında yukarı kaydır
+            },
+          }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -35,8 +40,12 @@ export default function FoodCards() {
 
         {/* Second Food Card */}
         <Grid item xs={12} md={4}>
-          <Card>
-            <CardActionArea>
+        <Card sx={{
+            transition: "transform 0.3s ease", // Animasyonun yumuşak olması için geçiş süresi
+            "&:hover": {
+              transform: "translateY(-10px)", // Hover sırasında yukarı kaydır
+            },
+          }}>            <CardActionArea>
               <CardMedia
                 component="img"
                 height="140"
@@ -57,8 +66,12 @@ export default function FoodCards() {
 
         {/* Third Food Card */}
         <Grid item xs={12} md={4}>
-          <Card>
-            <CardActionArea>
+        <Card sx={{
+            transition: "transform 0.3s ease", // Animasyonun yumuşak olması için geçiş süresi
+            "&:hover": {
+              transform: "translateY(-10px)", // Hover sırasında yukarı kaydır
+            },
+          }}>            <CardActionArea>
               <CardMedia
                 component="img"
                 height="140"

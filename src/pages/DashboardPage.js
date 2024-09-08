@@ -51,7 +51,7 @@ function ResponsiveDrawer(props) {
 
   const drawer = (
     <Box sx={{ bgcolor: "#131621", height: "100vh", display: 'flex', flexDirection: 'column' }}>
-      <Toolbar sx={{ fontSize: "30px", color: "#A059FF", mb: "22px" }}>
+      <Toolbar sx={{ fontSize: "40px",fontWeight:'bold', color: "#A059FF", mb: "22px",mt:'12px', display:'flex', justifyContent:'center', alignContent:'center', }}>
         LOGO
       </Toolbar>
       <List>
