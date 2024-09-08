@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Box, Typography, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
@@ -11,12 +12,16 @@ const Side3 = () => {
     return (
         <Box
             sx={{
+                position: 'fixed',
+                top: 0,
+                left: 0,
                 borderRight: '1px solid #EEEFEE',
                 width: { xs: '100%', md: '300px' },
-                height: { xs: 'auto', md: '100%' },
+                height: '100vh', // Yüksekliği viewport yüksekliğine ayarla
                 display: { xs: 'none', sm: 'block' },
                 flexDirection: 'column',
                 display: 'flex',
+                backgroundColor: '#fff' // Arka plan rengi ekleyin
             }}
         >
             {/* Logo Bölümü */}
@@ -32,7 +37,7 @@ const Side3 = () => {
                 }}
             >
                 <LogoDevIcon sx={{ color: '#0467FF', width: '70px', height: '70px' }} />
-                <Typography variant='h4' sx={{ fontWeight: '600', ml: 1 }}>LOGO</Typography>
+                <Typography variant='h4' sx={{ fontWeight: '600', ml: 1 }}>İŞLEM</Typography>
             </Box>
 
             {/* Sidebar Maddeleri */}
@@ -42,16 +47,16 @@ const Side3 = () => {
                     <ListItem
                         button
                         sx={{
-                            borderRadius: '8px', // Kenarları yuvarlat
+                            borderRadius: '8px',
                             '&:hover': {
-                                bgcolor: '#F4F6FA', // Hover arka plan rengi
-                                borderLeft: '4px solid #0467FF', // Hover durumunda sol border
+                                bgcolor: '#F4F6FA',
+                                borderLeft: '4px solid #0467FF',
                             },
                             '&:hover .MuiListItemText-primary': {
-                                color: '#0467FF', // Hoverda yazı rengi
+                                color: '#0467FF',
                             },
                             '&:hover .MuiListItemIcon-root': {
-                                color: '#0467FF', // Hoverda ikon rengi
+                                color: '#0467FF',
                             }
                         }}
                     >
@@ -63,16 +68,16 @@ const Side3 = () => {
                     <ListItem
                         button
                         sx={{
-                            borderRadius: '8px', // Kenarları yuvarlat
+                            borderRadius: '8px',
                             '&:hover': {
-                                bgcolor: '#F4F6FA', // Hover arka plan rengi
-                                borderLeft: '4px solid #0467FF', // Hover durumunda sol border
+                                bgcolor: '#F4F6FA',
+                                borderLeft: '4px solid #0467FF',
                             },
                             '&:hover .MuiListItemText-primary': {
-                                color: '#0467FF', // Hoverda yazı rengi
+                                color: '#0467FF',
                             },
                             '&:hover .MuiListItemIcon-root': {
-                                color: '#0467FF', // Hoverda ikon rengi
+                                color: '#0467FF',
                             }
                         }}
                     >
@@ -84,16 +89,16 @@ const Side3 = () => {
                     <ListItem
                         button
                         sx={{
-                            borderRadius: '8px', // Kenarları yuvarlat
+                            borderRadius: '8px',
                             '&:hover': {
-                                bgcolor: '#F4F6FA', // Hover arka plan rengi
-                                borderLeft: '4px solid #0467FF', // Hover durumunda sol border
+                                bgcolor: '#F4F6FA',
+                                borderLeft: '4px solid #0467FF',
                             },
                             '&:hover .MuiListItemText-primary': {
-                                color: '#0467FF', // Hoverda yazı rengi
+                                color: '#0467FF',
                             },
                             '&:hover .MuiListItemIcon-root': {
-                                color: '#0467FF', // Hoverda ikon rengi
+                                color: '#0467FF',
                             }
                         }}
                     >
@@ -109,16 +114,16 @@ const Side3 = () => {
                     <ListItem
                         button
                         sx={{
-                            borderRadius: '8px', // Kenarları yuvarlat
+                            borderRadius: '8px',
                             '&:hover': {
-                                bgcolor: '#F4F6FA', // Hover arka plan rengi
-                                borderLeft: '4px solid #0467FF', // Hover durumunda sol border
+                                bgcolor: '#F4F6FA',
+                                borderLeft: '4px solid #0467FF',
                             },
                             '&:hover .MuiListItemText-primary': {
-                                color: '#0467FF', // Hoverda yazı rengi
+                                color: '#0467FF',
                             },
                             '&:hover .MuiListItemIcon-root': {
-                                color: '#0467FF', // Hoverda ikon rengi
+                                color: '#0467FF',
                             }
                         }}
                     >
@@ -130,16 +135,16 @@ const Side3 = () => {
                     <ListItem
                         button
                         sx={{
-                            borderRadius: '8px', // Kenarları yuvarlat
+                            borderRadius: '8px',
                             '&:hover': {
-                                bgcolor: '#F4F6FA', // Hover arka plan rengi
-                                borderLeft: '4px solid #0467FF', // Hover durumunda sol border
+                                bgcolor: '#F4F6FA',
+                                borderLeft: '4px solid #0467FF',
                             },
                             '&:hover .MuiListItemText-primary': {
-                                color: '#0467FF', // Hoverda yazı rengi
+                                color: '#0467FF',
                             },
                             '&:hover .MuiListItemIcon-root': {
-                                color: '#0467FF', // Hoverda ikon rengi
+                                color: '#0467FF',
                             }
                         }}
                     >
@@ -151,16 +156,16 @@ const Side3 = () => {
                     <ListItem
                         button
                         sx={{
-                            borderRadius: '8px', // Kenarları yuvarlat
+                            borderRadius: '8px',
                             '&:hover': {
-                                bgcolor: '#F4F6FA', // Hover arka plan rengi
-                                borderLeft: '4px solid #0467FF', // Hover durumunda sol border
+                                bgcolor: '#F4F6FA',
+                                borderLeft: '4px solid #0467FF',
                             },
                             '&:hover .MuiListItemText-primary': {
-                                color: '#0467FF', // Hoverda yazı rengi
+                                color: '#0467FF',
                             },
                             '&:hover .MuiListItemIcon-root': {
-                                color: '#0467FF', // Hoverda ikon rengi
+                                color: '#0467FF',
                             }
                         }}
                     >
@@ -178,16 +183,16 @@ const Side3 = () => {
                     <ListItem
                         button
                         sx={{
-                            borderRadius: '8px', // Kenarları yuvarlat
+                            borderRadius: '8px',
                             '&:hover': {
-                                bgcolor: '#F4F6FA', // Hover arka plan rengi
-                                borderLeft: '4px solid #0467FF', // Hover durumunda sol border
+                                bgcolor: '#F4F6FA',
+                                borderLeft: '4px solid #0467FF',
                             },
                             '&:hover .MuiListItemText-primary': {
-                                color: '#0467FF', // Hoverda yazı rengi
+                                color: '#0467FF',
                             },
                             '&:hover .MuiListItemIcon-root': {
-                                color: '#0467FF', // Hoverda ikon rengi
+                                color: '#0467FF',
                             }
                         }}
                     >
@@ -199,16 +204,16 @@ const Side3 = () => {
                     <ListItem
                         button
                         sx={{
-                            borderRadius: '8px', // Kenarları yuvarlat
+                            borderRadius: '8px',
                             '&:hover': {
-                                bgcolor: '#F4F6FA', // Hover arka plan rengi
-                                borderLeft: '4px solid #0467FF', // Hover durumunda sol border
+                                bgcolor: '#F4F6FA',
+                                borderLeft: '4px solid #0467FF',
                             },
                             '&:hover .MuiListItemText-primary': {
-                                color: '#0467FF', // Hoverda yazı rengi
+                                color: '#0467FF',
                             },
                             '&:hover .MuiListItemIcon-root': {
-                                color: '#0467FF', // Hoverda ikon rengi
+                                color: '#0467FF',
                             }
                         }}
                     >
