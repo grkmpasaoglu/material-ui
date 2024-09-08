@@ -2,7 +2,6 @@ import {
   Box,
   Divider,
   Typography,
-  IconButton,
   Menu,
   MenuItem,
 } from "@mui/material";
@@ -11,16 +10,12 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import LogoutIcon from "@mui/icons-material/Logout";
 import SearchIcon from "@mui/icons-material/Search";
-import MenuIcon from "@mui/icons-material/Menu";
 import React, { useState } from "react";
 
 const Nav3 = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
 
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
 
   const handleClose = () => {
     setAnchorEl(null);
