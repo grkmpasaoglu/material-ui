@@ -27,7 +27,7 @@ import {
 import EnhancedTable from "../components/EnhancedTable";
 import Register from "../components/Register";
 import AppBarComponent from "../components/AppBar";
-import SettingsIcon from '@mui/icons-material/Settings';
+import SettingsIcon from "@mui/icons-material/Settings";
 
 const drawerWidth = 240;
 
@@ -50,8 +50,26 @@ function ResponsiveDrawer(props) {
   const handleDrawerClose = () => setMobileOpen(false);
 
   const drawer = (
-    <Box sx={{ bgcolor: "#131621", height: "100vh", display: 'flex', flexDirection: 'column' }}>
-      <Toolbar sx={{ fontSize: "40px",fontWeight:'bold', color: "#A059FF", mb: "22px",mt:'12px', display:'flex', justifyContent:'center', alignContent:'center', }}>
+    <Box
+      sx={{
+        bgcolor: "#131621",
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      <Toolbar
+        sx={{
+          fontSize: "40px",
+          fontWeight: "bold",
+          color: "#A059FF",
+          mb: "22px",
+          mt: "12px",
+          display: "flex",
+          justifyContent: "center",
+          alignContent: "center",
+        }}
+      >
         LOGO
       </Toolbar>
       <List>
@@ -83,7 +101,7 @@ function ResponsiveDrawer(props) {
           </ListItem>
         ))}
       </List>
-      <Box sx={{ marginTop: 'auto' }}>
+      <Box sx={{ marginTop: "auto" }}>
         <ListItem disablePadding>
           <ListItemButton
             sx={{
@@ -208,7 +226,9 @@ function ResponsiveDrawer(props) {
             overflowX: "auto",
           }}
         >
-          <Typography sx={{ fontWeight: "bold", mb: "10px" }}>Stok Takip</Typography>
+          <Typography sx={{ fontWeight: "bold", mb: "10px" }}>
+            Stok Takip
+          </Typography>
           <EnhancedTable /> {/* ENHANCED TABLE */}
         </Container>
       </Box>

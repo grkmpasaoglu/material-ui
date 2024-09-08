@@ -1,12 +1,12 @@
-import React from 'react'
-import Drawer from '../comp2/Drawer'
+import React from "react";
+import Drawer from "../comp2/Drawer";
 
 const DashboardTwo = () => {
   return (
     <div>
-      <Drawer/>
+      <Drawer />
     </div>
-  )
-}
+  );
+};
 
-export default DashboardTwo
+export default DashboardTwo;
