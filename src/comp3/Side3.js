@@ -286,7 +286,7 @@ const Side3 = () => {
       </Box>
 
       {/* Sidebar Maddeleri */}
-      <Box sx={{ px: "5px", py: "5px", flexGrow: 1 }}>
+      <Box sx={{ px: "15px", py: "5px", flexGrow: 1 }}>
         <Typography variant="subtitle2" sx={{ px: "16px", mt: "16px" }}>
           MAIN
         </Typography>
@@ -431,7 +431,7 @@ const Side3 = () => {
         sx={{
           borderTop: "1px solid #EEEFEE",
           mt: "auto",
-          px: "5px",
+          px: "15px",
           py: "5px",
         }}
       >
